@@ -1,0 +1,11 @@
+# "context-menu":
+#   "atom-text-editor": [
+#     {"label": "Run AIF", "command": "aif:run"}
+#     {"label": "Insert Hello World!": "aif:hello"}]
+# "menu": [{
+#   "label": "Packages"
+#   "submenu": [{
+#     "label": "AIF"
+#     "submenu": [{"label": "Run", "command": "aif:run"}]
+#   }]
+# }]

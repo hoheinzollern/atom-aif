@@ -1,0 +1,43 @@
+'scopeName': 'source.aif'
+'name': 'AIF'
+'fileTypes': ['aif', 'aifom']
+
+'patterns': [
+	{
+		'begin': '%'
+		'end': '\\n'
+		'name': 'comment.line'
+	}
+	{
+		'match': '\\b(Problem|Types|Sets|Functions|Facts|Rules|Definitions)\\b'
+		'name': 'keyword.control.structure'
+	}
+	{
+		'match': '\\b(public|private|value|untyped|notin|in|forall|exists)\\b'
+		'name': 'keyword.control'
+	}
+	{
+		'match': '\\b[A-Z][a-zA-Z0-9_]*\\b'
+		'name': 'variable'
+	}
+	{
+		'match': '(=>|=\\[|\\]=>|;|:|,|{|}|\\[|\\]|\\(|\\)|/|\\\\|\\+\\+|\\.|=)'
+		'name': 'keyword.operator'
+	}
+  {
+    'match': '=>'
+    'name': 'keyword.operator'
+  }
+  {
+    'match': '\\b_[a-zA-Z0-9_]+\\b'
+    'name': 'variable.other.singleton.aif'
+  }
+  {
+    'match': '\\b[a-z][a-zA-Z0-9_]*(?=[(])\\b'
+    'name': 'entity.name.function.declaration.aif'
+  }
+	{
+		'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((E|e)(\\+|-)?[0-9]+)?\\b'
+		'name': 'constant.numeric'
+	}
+]
