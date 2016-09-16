@@ -1,7 +1,7 @@
 {
   "name": "aif",
   "main": "./lib/aif",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Language support for AIF and AIF-omega",
   "keywords": [],
   "activationCommands": {
