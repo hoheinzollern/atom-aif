@@ -9,6 +9,11 @@
 		'name': 'comment.line'
 	}
 	{
+		'begin': '#'
+		'end': '#'
+		'name': 'comment.multiLine'
+	}
+	{
 		'match': '\\b(Problem|Types|Sets|Functions|Facts|Rules|Definitions)\\b'
 		'name': 'keyword.control.structure'
 	}
